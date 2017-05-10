@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "compileOnSave": false,
+    "target": "ES5",
+    "module": "commonjs",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true
+  },
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "typeRoots": [
+    "../../../node_modules/@types"
+  ]
+}
+
