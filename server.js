@@ -1,7 +1,7 @@
 var express = require('express');
 
 var server = express();
-
+import { MailchimpInsight } from './server/Mailchimp';
 
 server.use(function (req, res, next) {
 	res.set('Access-Control-Allow-Origin', '*');

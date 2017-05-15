@@ -1,47 +1,29 @@
 {
   "name": "user-insight",
+  "description": "Simple insight api ",
   "version": "0.0.1",
-  "description": "insight",
-  "license": "MIT",
-  "private": true,
-  "scripts": {
-    "build": "webpack",
-    "watch": "webpack -w",
-    "build-prod": "rimraf build/web && webpack --config webpack-production.config.js",
-    "start": "node server"
-  },
+  "author": "Olivier Evalet <olivier@evaletolab.ch>",
+  "licenses": [
+    {
+      "type": "GPL"
+    }
+  ],
   "dependencies": {
-    "@angular/common": "^2.3.1",
-    "@angular/compiler": "^2.3.1",
-    "@angular/core": "^2.3.1",
-    "@angular/forms": "^2.3.1",
-    "@angular/http": "^2.3.1",
-    "@angular/platform-browser": "^2.3.1",
-    "@angular/platform-browser-dynamic": "^2.3.1",
-    "@angular/router": "^3.3.1",
-    "bootstrap": "^3.3.7",
-    "core-js": "^2.4.1",
-    "font-awesome": "^4.7.0",
-    "reflect-metadata": "^0.1.8",
-    "rxjs": "^5.0.0-rc.4",
-    "zone.js": "^0.7.4"
+    "fnv-plus": "1.2.x",
+    "mailchimp-api-v3": "^1.7.0",
+    "moment": "^2.18.1",
+    "nedb": "^1.8.0",
+    "underscore": "1.8.x"
   },
   "devDependencies": {
-    "@types/core-js": "0.9.35",
-    "angular2-template-loader": "^0.6.0",
-    "awesome-typescript-loader": "^3.0.0-beta.17",
-    "copy-webpack-plugin": "^4.0.1",
-    "css-loader": "^0.26.1",
-    "express": "^4.14.0",
-    "extract-text-webpack-plugin": "^1.0.1",
-    "file-loader": "^0.9.0",
-    "html-webpack-plugin": "^2.24.1",
-    "less": "^2.7.1",
-    "less-loader": "^2.2.3",
-    "rimraf": "^2.5.4",
-    "style-loader": "^0.13.1",
-    "typescript": "^2.1.4",
-    "url-loader": "^0.5.7",
-    "webpack": "^1.14.0"
-  }
+    "mocha": ">= 1.x.x",
+    "should": ">= 4.x.x"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha test"
+  },
+  "keywords": [
+    "insight",
+    "mailchimp"
+  ]
 }
