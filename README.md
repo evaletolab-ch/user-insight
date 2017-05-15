@@ -1,10 +1,11 @@
-[![David](https://img.shields.io/david/karibou-ch/karibou-wallet.svg?style=flat)](https://david-dm.org/karibou-ch/karibou-wallet)
-[![Build Status](https://travis-ci.org/karibou-ch/karibou-wallet.svg?branch=master)](https://travis-ci.org/karibou-ch/karibou-wallet)
-[![Join the chat at https://gitter.im/karibou-ch/karibou-wallet](https://badges.gitter.im/karibou-ch/karibou-wallet.svg)](https://gitter.im/karibou-ch/karibou-wallet?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![David](https://img.shields.io/david/evaletolab-ch/user-insight.svg?style=flat)](https://david-dm.org/evaletolab-ch/user-insight)
+[![Build Status](https://travis-ci.org/evaletolab-ch/user-insight.svg?branch=master)](https://travis-ci.org/evaletolab-ch/user-insight)
+[![Join the chat at https://gitter.im/evaletolab-ch/user-insight](https://badges.gitter.im/evaletolab-ch/user-insight.svg)](https://gitter.im/evaletolab-ch/user-insight?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ## Main usage
 
-The purpose of this project is to provide a simple and intiutive API to handle a simple Wallet manager for your e-commerce. It has bean designed to work on server side.
+The purpose of this project is to provide a simple and intiutive API to handle a powerfull insight from mailchimp and facebook.
+Get Ads insight, objectives insight, mail campaigns (open,click,links, audiance) insight
 
 ## Prerequisites
 install node.js with [NVM](https://github.com/creationix/nvm) (required). 
@@ -15,12 +16,12 @@ install node.js with [NVM](https://github.com/creationix/nvm) (required).
 ## Installation
 From github,    
 
-    git clone https://github.com/evaletolab/karibou-wallet
-    cd karibou-wallet
+    git clone https://github.com/evaletolab-ch/user-insight
+    cd user-insight
 
-Easiest way to install karibou-wallet is by using npm *(not yet ready for production)*:
-
-    npm install --save karibou-wallet
+Easiest way to install user-insight is by using npm *(not yet ready for production)*:
+    npm install -g mocha
+    npm install --save user-insight
 
 
 ## Running unit tests
@@ -28,27 +29,10 @@ Easiest way to install karibou-wallet is by using npm *(not yet ready for produc
 To run unit tests you need [Mocha](https://github.com/visionmedia/mocha),
 and [should.js](https://github.com/visionmedia/should.js). The tests are run simply by simply typing:
 
-    NODE_ENV=test ./node_modules/.bin/mocha
+    NODE_ENV=test mocha
 
 Do not run tests with your live processor. Make sure you are running in a
 sandbox.
-
-## Wallet specification 1.0
-* [specifications of our wallet with Stripe](../../wiki/Wallet-1.0-Specifications-(Stripe-backend))
-
-### Overview
-When using the karibou-wallet api, you basically deal with 3 separate concepts: 
-- wallet (the container of an amount of money),
-- transaction (helper to manage charges)
-- smartcontract (multiple destinations)
-- transfer information
-
-
-## Authors & spcial thanks :heart:
-
-- David Pate, https://github.com/patedavid
-- Evalet Olivier, https://github.com/evaletolab
-- Noria Foukia Enseignante en mathématiques @HEPIA 
 
 
 ## License
